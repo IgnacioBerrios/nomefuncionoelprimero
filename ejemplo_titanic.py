@@ -23,6 +23,9 @@ with st.sidebar:
     # Muestra el valor actual del slider en la barra lateral.
     st.write("Bins=", div)
 
+    #boton para cambiar de color bien chevere
+    st.button("cambiar de color")
+
 # Desplegamos un histograma con los datos del eje X
 fig, ax = plt.subplots(1, 2, figsize=(10, 3))
 ax[0].hist(df["Age"], bins=div)
